@@ -1,0 +1,18 @@
+{
+  "stage": "code-generation",
+  "unit": "u1-todo-app",
+  "version": 1,
+  "writes": [
+    { "path": "storage.js" },
+    { "path": "tasks.js" },
+    { "path": "ui.js" },
+    { "path": "index.html" },
+    { "path": "styles.css" },
+    { "path": "storage.test.js" },
+    { "path": "tasks.test.js" },
+    { "path": "ui.test.js" },
+    { "path": "package.json" },
+    { "path": "vitest.config.js" },
+    { "path": "package-lock.json" }
+  ]
+}

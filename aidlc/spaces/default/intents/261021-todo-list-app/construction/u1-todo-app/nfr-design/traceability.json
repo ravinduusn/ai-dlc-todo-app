@@ -1,0 +1,16 @@
+{
+  "stage": "nfr-design",
+  "unit": "u1-todo-app",
+  "upstream_ids": ["NFR2.1", "NFR2.2", "NFR3.1", "NFR3.2", "NFR3.3", "NFR4.1", "NFR4.2", "NFR4.3"],
+  "coverage": [
+    { "id": "NFR2.1", "status": "OK", "target": "security-design.md — textContent-only DOM writes; no innerHTML with user input" },
+    { "id": "NFR2.2", "status": "OK", "target": "security-design.md — input trimming in TaskDomain.addTask(); event delegation pattern" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md — addEventListener-only event wiring; no on* attributes in index.html" },
+    { "id": "NFR3.2", "status": "OK", "target": "security-design.md — no eval, no dynamic script execution; static code only" },
+    { "id": "NFR3.3", "status": "OK", "target": "security-design.md — single 'tasks' localStorage key; only StorageLayer reads/writes it" },
+    { "id": "NFR4.1", "status": "OK", "target": "performance-design.md — deferred ES modules; DOMContentLoaded init; budget breakdown < 170 ms" },
+    { "id": "NFR4.2", "status": "OK", "target": "performance-design.md — synchronous full re-render; O(n) at n<=100; within 16 ms frame budget" },
+    { "id": "NFR4.3", "status": "OK", "target": "performance-design.md — synchronous localStorage save/load; < 5 ms for 15 KB" }
+  ],
+  "reverse": []
+}

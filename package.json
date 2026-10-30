@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=verbose"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.0",
+    "jsdom": "^26.0.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -56,11 +56,17 @@
 <!-- Format: NEVER [behavior] (affirmed [date]) -->
 <!-- Example: NEVER throw exceptions across service layer boundaries (affirmed 2026-05-17) -->
 
+- NEVER hardcode credentials, API keys, or secrets in source code — use environment variables or a secrets manager when the project involves any credentials (construction phase guardrail) (affirmed 2026-10-21)
+
 ## Mandated
 
 <!-- Populated by practices-discovery affirmation gate. -->
 <!-- Format: ALWAYS [behavior] (affirmed [date]) -->
 <!-- Example: ALWAYS use Result<T,E> for fallible operations in service layer (affirmed 2026-05-17) -->
+
+- ALWAYS validate and sanitize all inputs at system boundaries — applies when the project has external input boundaries (construction phase guardrail) (affirmed 2026-10-21)
+
+- ALWAYS include error handling at integration boundaries — errors must be surfaced to the caller or logged, never silently swallowed (construction phase guardrail) (affirmed 2026-10-21)
 
 ## Corrections
 

@@ -27,3 +27,6 @@ aidlc/diagnostics/
 aidlc/.aidlc-turn-counter
 aidlc/.aidlc-readonly-latch
 # END AI-DLC:gitignore
+
+node_modules/
+

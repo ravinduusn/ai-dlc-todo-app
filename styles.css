@@ -1,0 +1,205 @@
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-completed: rgba(26, 26, 26, 0.4);
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --border-radius: 6px;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --touch-target: 44px;
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   Layout
+   ============================================================ */
+header {
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+main {
+  max-width: 640px;
+  margin: var(--spacing-xl) auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ============================================================
+   Task input form
+   ============================================================ */
+form {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--color-text);
+  outline: none;
+  min-height: var(--touch-target);
+}
+
+form input[type="text"]:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.25);
+}
+
+form button[type="submit"] {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: var(--touch-target);
+  white-space: nowrap;
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus-visible {
+  background-color: var(--color-accent-hover);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   Task list
+   ============================================================ */
+#task-list {
+  list-style: none;
+}
+
+.empty-state {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  font-size: 0.9375rem;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+/* Checkbox — sized for touch */
+.task-item input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* Label wraps checkbox + text; clicking label toggles checkbox */
+.task-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+  cursor: pointer;
+  min-height: var(--touch-target);
+}
+
+.task-label span {
+  font-size: 1rem;
+}
+
+/* Completed state */
+.task-item--completed .task-label span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Delete button */
+.task-delete {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.task-delete:hover,
+.task-delete:focus-visible {
+  color: #dc2626;
+  background-color: #fee2e2;
+  outline: 2px solid #dc2626;
+  outline-offset: 1px;
+}
+
+/* ============================================================
+   Responsive — mobile (<768px)
+   ============================================================ */
+@media (max-width: 767px) {
+  main {
+    margin: var(--spacing-md) auto;
+    padding: 0 var(--spacing-sm);
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input[type="text"],
+  form button[type="submit"] {
+    width: 100%;
+  }
+}

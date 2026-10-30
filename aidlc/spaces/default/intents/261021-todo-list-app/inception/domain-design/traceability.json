@@ -1,0 +1,12 @@
+{
+  "stage": "domain-design",
+  "upstream_ids": ["US1.1", "US2.1", "US3.1", "US4.1", "US5", "US6"],
+  "coverage": [
+    { "id": "US1.1", "status": "OK", "target": "TaskDomain.addTask, UILayer (form submit handler)" },
+    { "id": "US2.1", "status": "OK", "target": "UILayer (task list renderer), TaskDomain.getTasks, StorageLayer.load" },
+    { "id": "US3.1", "status": "OK", "target": "TaskDomain.toggleTask, UILayer (checkbox handler)" },
+    { "id": "US4.1", "status": "OK", "target": "TaskDomain.deleteTask, UILayer (delete button handler)" },
+    { "id": "US5",   "status": "OK", "target": "StorageLayer (load/save), TaskDomain (delegates persistence)" },
+    { "id": "US6",   "status": "OK", "target": "UILayer (responsive layout, ARIA attributes, keyboard focus management)" }
+  ]
+}

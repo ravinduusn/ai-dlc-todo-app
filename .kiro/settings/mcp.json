@@ -3,7 +3,7 @@
     "context7": {
       "type": "http",
       "url": "https://mcp.context7.com/mcp",
-      "disabled": true
+      "disabled": false
     },
     "aws-mcp": {
       "command": "uvx",
@@ -13,22 +13,22 @@
         "--metadata",
         "AWS_REGION=us-east-1"
       ],
-      "disabled": true
+      "disabled": false
     },
     "aws-pricing": {
       "command": "uvx",
       "args": ["awslabs.aws-pricing-mcp-server@latest"],
-      "disabled": true
+      "disabled": false
     },
     "aws-iac": {
       "command": "uvx",
       "args": ["awslabs.aws-iac-mcp-server@latest"],
-      "disabled": true
+      "disabled": false
     },
     "aws-serverless": {
       "command": "uvx",
       "args": ["awslabs.aws-serverless-mcp-server@latest"],
-      "disabled": true
+      "disabled": false
     }
   }
 }

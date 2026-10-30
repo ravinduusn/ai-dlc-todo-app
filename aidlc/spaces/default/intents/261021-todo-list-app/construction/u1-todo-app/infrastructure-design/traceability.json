@@ -1,0 +1,16 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "u1-todo-app",
+  "upstream_ids": ["NFR2.1", "NFR2.2", "NFR3.1", "NFR3.2", "NFR3.3", "NFR4.1", "NFR4.2", "NFR4.3"],
+  "coverage": [
+    { "id": "NFR2.1", "status": "N/A", "target": "No server-side infrastructure — textContent DOM pattern is a code-level control, not an infrastructure control" },
+    { "id": "NFR2.2", "status": "N/A", "target": "No server-side infrastructure — input trimming is a code-level control in TaskDomain" },
+    { "id": "NFR3.1", "status": "N/A", "target": "No server-side infrastructure — event wiring is a code-level pattern in ui.js" },
+    { "id": "NFR3.2", "status": "N/A", "target": "No server-side infrastructure — no eval is a code-level constraint" },
+    { "id": "NFR3.3", "status": "OK", "target": "infrastructure-specification.md — localStorage as the sole storage service; single key 'tasks'" },
+    { "id": "NFR4.1", "status": "OK", "target": "infrastructure-specification.md — static local file delivery; no network or server latency; monitoring-design.md — DevTools TtI metric" },
+    { "id": "NFR4.2", "status": "N/A", "target": "No infrastructure component — synchronous re-render is a code-level design in UILayer" },
+    { "id": "NFR4.3", "status": "OK", "target": "infrastructure-specification.md — localStorage as the persistence service; monitoring-design.md — storage timing metric" }
+  ],
+  "reverse": []
+}

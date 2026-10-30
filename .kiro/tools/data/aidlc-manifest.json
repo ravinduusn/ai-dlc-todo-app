@@ -185,7 +185,7 @@
     ".kiro/sensors/aidlc-type-check.md": "sha256:7632a36a29bf20944c92a32e5069c6be79db4d06aec6179aead2307e58062ee9",
     ".kiro/sensors/aidlc-upstream-coverage.md": "sha256:79b4514df8cd64ed776d318e8cd4518bca14d6fee13fe79f1da85564e9e451f0",
     ".kiro/settings/cli.json": "sha256:befa6f54d38a4b9b52a35974d010f5f09b5c8d1cff24e9240f8f2b182d376075",
-    ".kiro/settings/mcp.json": "sha256:ea41a9f4b79f24eee9c02d2bd4ef9530b48adc62b9454c7676165baaee803488",
+    ".kiro/settings/mcp.json": "sha256:442d04afd10d9517f58ffe383674c5a15993c80dec24f89cedb038c5b80a31e9",
     ".kiro/skills/aidlc/SKILL.md": "sha256:03a1031492318dfcd5eb9a0bc18117c6a4d5e6e09e70deb4177b9b93e294549e",
     ".kiro/skills/aidlc/composer.md": "sha256:9f81515df505555ab60ca4a15b1c2f0755ae68cc53a74b31c0396499025066cf",
     ".kiro/skills/aidlc/question-rendering.md": "sha256:e168ca132dbf03279bb4f0919689b4f81dcfa49431dba305be17825e3901e199",
@@ -351,13 +351,7 @@
   },
   "shippedOnly": true,
   "entries": {
-    ".kiro/settings/mcp.json": {
-      "context7": "sha256:d7d252130bf5ce07dfc75cacbde7353db0343b4202946d848079f404cf7592fe",
-      "aws-mcp": "sha256:0f21f6ae8c1884ff4f4661b08d25ebc5268f2982a22203f1b58f1d0f4a023847",
-      "aws-pricing": "sha256:1008c197e443e9f75874008e93fc546b3ae52015ec681b5ffe9c9b424349200d",
-      "aws-iac": "sha256:d3b58139e955307d3fdef28074c66916b52e4ed238451fcce760ef2a9d229396",
-      "aws-serverless": "sha256:4aa265241bef9aba54eaa63114b25a6cae06629d7e518a2de0436794317f51c4"
-    }
+    ".kiro/settings/mcp.json": {}
   },
   "rootContributions": {
     ".gitignore": {

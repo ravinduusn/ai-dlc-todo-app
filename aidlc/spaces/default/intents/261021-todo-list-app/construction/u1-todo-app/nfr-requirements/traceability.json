@@ -1,0 +1,12 @@
+{
+  "stage": "nfr-requirements",
+  "unit": "u1-todo-app",
+  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4"],
+  "coverage": [
+    { "id": "NFR1", "status": "N/A", "target": "Responsive design — addressed by CSS layout in tech-stack-decisions.md (Decision 3) and frontend-components.md; no dedicated performance-requirements row needed as it is a layout concern, not a load/latency target" },
+    { "id": "NFR2", "status": "OK", "target": "NFR2.1, NFR2.2 in security-requirements.md" },
+    { "id": "NFR3", "status": "N/A", "target": "Browser compatibility — no NFR artifact needed; target browsers are evergreen; constraint is enforced by Decision 1 (ES2020) and Decision 2 (native ES modules), both universally supported on target browsers" },
+    { "id": "NFR4", "status": "OK", "target": "NFR4.1, NFR4.2, NFR4.3 in performance-requirements.md" }
+  ],
+  "reverse": []
+}

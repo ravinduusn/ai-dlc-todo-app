@@ -1,0 +1,24 @@
+{
+  "stage": "user-stories",
+  "upstream_ids": ["FR1.1", "FR1.2", "FR1.3", "FR1.4", "FR1.5", "FR1.6", "FR2.1", "FR3.1", "FR3.2", "FR3.3", "FR3.4", "FR4.1", "FR4.2", "FR4.3", "NFR1.1", "NFR2.1", "NFR3.1", "NFR4.1"],
+  "coverage": [
+    { "id": "FR1.1", "status": "OK", "target": "US1" },
+    { "id": "FR1.2", "status": "OK", "target": "US2" },
+    { "id": "FR1.3", "status": "OK", "target": "US3" },
+    { "id": "FR1.4", "status": "OK", "target": "US3" },
+    { "id": "FR1.5", "status": "OK", "target": "US4" },
+    { "id": "FR1.6", "status": "OK", "target": "US1" },
+    { "id": "FR2.1", "status": "OK", "target": "US1, US2" },
+    { "id": "FR3.1", "status": "OK", "target": "US5" },
+    { "id": "FR3.2", "status": "OK", "target": "US5" },
+    { "id": "FR3.3", "status": "OK", "target": "US5" },
+    { "id": "FR3.4", "status": "OK", "target": "US5" },
+    { "id": "FR4.1", "status": "OK", "target": "US2" },
+    { "id": "FR4.2", "status": "OK", "target": "US2" },
+    { "id": "FR4.3", "status": "OK", "target": "US2" },
+    { "id": "NFR1.1", "status": "OK", "target": "US6" },
+    { "id": "NFR2.1", "status": "OK", "target": "US6" },
+    { "id": "NFR3.1", "status": "OK", "target": "US6" },
+    { "id": "NFR4.1", "status": "Deferred", "target": "nfr-requirements" }
+  ]
+}
